@@ -1,0 +1,33 @@
+{
+  "name": "sinx",
+  "version": "1.0.0",
+  "description": "SinX CLI is a math solving program that has support for: Algebra, Trig, Calc, + More!",
+  "main": "bin/sinx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueberryTechnologies/SinX-CLI.git"
+  },
+  "keywords": [
+    "sinx",
+    "math",
+    "problem",
+    "solving",
+    "math",
+    "solver"
+  ],
+  "author": "Blueberry Technologies",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/BlueberryTechnologies/SinX-CLI/issues"
+  },
+  "homepage": "https://github.com/BlueberryTechnologies/SinX-CLI#readme",
+  "bin": {
+    "sinx": "./bin/sinx.js"
+  },
+  "dependencies": {
+    "yargs": "^17.6.2"
+  }
+}
