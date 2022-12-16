@@ -2,13 +2,14 @@
 #include <iomanip>
 #include <limits>
 #include <stdio.h>
+#include <cmath>
 using namespace std;
 
 class SinX{
 public:
     void userStartMenu(){
         cout << "Option 1: Number Stats" << endl;
-        cout << "Option 2: Add numbers" << endl;
+        cout << "Option 2: Add 2 numbers" << endl;
         cout << "======================" << endl;
     }
     void numberStats(){
@@ -61,24 +62,50 @@ public:
 
     }
     void addNumbers(){
-        const int numOfNums = 0;
-        int arrayOfNums[3];
-        cout << "How many numbers would you like to add?:\n> " << endl;
-        // Riley stopped here on 12/16/22 @6:22am
+        int numOfNums = 0;
+        int number1 = 0;
+        int number2 = 0;
+        int switchChoice = 0;
+
+        cout << "Enter first number:\n> ";
+        cin >> number1;
+        cout << "Enter second number:\n> ";
+        cin >> number2;
+        cout << "What would you like to do with these numbers?:\n" << endl;
+        cout << "1) Add the 2 numbers together." << endl;
+        cout << "2) Subtract the 2 numbers together." << endl;
+        cout << "3) Divide the 2 numbers together." << endl;
+        cout << "4) Multiply the 2 numbers together." << endl;
+        cout << "> ";
+        cin >> switchChoice;
+        switch(switchChoice){
+            case 1:
+                cout << "======================" << endl;
+                cout << "> " << number1 << " + " << number2 << " = " << number1+number2 << endl;
+                cin.ignore();
+                cout << "> Press enter to continue";
+                cin.get();
+                break;
+            default:
+                cout << "======================" << endl;
+                cout << "That command wasn't valid. Good day." << endl;
+                break;
+        }
         
     }
     void userChoice(int choice){
-        if (choice == 1){
-            cout << "======================" << endl;
-            numberStats();
-        }else if (choice == 2){
-            cout << "======================" << endl;
-            addNumbers();
+        switch(choice){
+            case 1:
+                cout << "======================" << endl;
+                numberStats();
+                break;
+            case 2:
+                cout << "======================" << endl;
+                addNumbers();
+                break;
+            default:
+                cout << "======================\nThat was not a valid option! Good day." << endl;
         }
-        else{
-            cout << "======================\nThat was not a valid option! Good day." << endl;
-        }
-        
     }
 };
 
