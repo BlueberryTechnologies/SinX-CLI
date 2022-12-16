@@ -7,17 +7,18 @@ Created by Blueberry Technologies
 
 ### Overview
 
-SinX CLI is a all-encompassing math program written in JavaScript using Node.js. Some of the following features include:
+SinX CLI is a all-encompassing math program written in C++. Some of the following features include:
 
-- Algebra problem solving
-  - Quadratics
-  - Monomial and Polynomial calculations
+- Basic Math operations between 2 numbers
+- Algebra problem solving (coming soon)
+  - Quadratics (coming soon)
+  - Monomial and Polynomial calculations (coming soon)
 - Trigonometry problem solving (coming soon)
 - Calculus problem solving (coming soon)
 
 ---
 
-### Usage
+### Usage (coming soon)
 
 ```
 sinx [<options>]
