@@ -1,0 +1,1 @@
+if you pull and try to build on windows it wont work because of the file config. i had to change because im on linux lmao just look at the older version of /vscode/tasks.json to find the right path and stuff
