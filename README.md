@@ -1,3 +1,4 @@
+# Unfortunately, this program is on our backlog. This means we are not updating it. Don't worry, we are coming back to revisit this program soon.
 # SinX CLI
 
 Created by Blueberry Technologies
